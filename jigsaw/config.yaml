@@ -1,0 +1,47 @@
+input_path: datas/inputs/
+
+n_models: 1
+max_len: 220
+batch_size: 512
+epochs: 1 
+n_folds: 5
+log_folder: test_bilstm
+
+crawl-300d-2M:
+  embedding_path: crawl-300d-2M.vec 
+  matrix_path: embedding_crawl-300d-2M.npy
+
+glove.840B.300d:
+  embedding_path: glove.840B.300d.txt 
+  matrix_path: embedding_glove.840B.300d.npy
+
+preprocessing: light_preprocessing
+
+model: BiLSTM 
+
+BiLSTM:
+  lstm_units: 128
+  dense_units1: 512
+  dense_units2: 256
+  dense_units3: 128
+  dropout_rate: 0.3 
+
+LstmGruCnn:
+  lstm_units: 128
+  dense_units1: 512
+  dense_units2: 256
+  dense_units3: 128
+  dropout_rate: 0.3 
+
+Cnn:
+  kernel_num: 128
+  dense_units1: 512
+  dense_units2: 128
+
+bert:
+  config_path: bert_config.json
+  model: bert-base-uncased
+  lr: 0.00002 
+  batch_size: 32
+  accumulation_steps: 1
+  output_model_path: bert_pytorch_

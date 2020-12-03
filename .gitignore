@@ -127,3 +127,14 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+jigsaw/datas
+jigsaw/jigsaw_venv
+jigsaw/models
+jigsaw/model_results
+jigsaw/old_scripts
+jigsaw/predictions
+jigsaw/__pycache__
+jigsaw/submissions
+jigsaw/test_bilstm
+
