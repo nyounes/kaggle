@@ -1,0 +1,17 @@
+input_path: datas/inputs/
+
+bert_config_path: bert-base-uncased/bert_config.json
+
+bert_model: bert-base-uncased
+
+max_len_question: 512
+max_len_answer: 512
+
+batch_size: 8 
+epochs: 8 
+n_folds: 5
+lr: 0.00003
+accumulation_steps: 1
+log_folder: bert/bert_qa/
+question_output_model_path: question_bert_fold{}_epoch{}.bin 
+answer_output_model_path: answer_bert_fold{}_epoch{}.bin 

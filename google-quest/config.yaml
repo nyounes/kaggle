@@ -1,0 +1,12 @@
+input_path: datas/inputs/
+
+
+max_len_body: 500
+max_len_title: 30
+max_len_answer: 500
+
+batch_size: 16
+epochs: 30
+n_folds: 5
+lr: 0.001
+log_folder: lstm_gru_qat/
